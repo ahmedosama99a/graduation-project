@@ -98,101 +98,143 @@ graduation-project/
     ├── hard Notebook.ipynb
     └── sketch_mar19a.ino
 ```
-Datasets
+
+---
+
+## Main Notebooks
+
+The repository includes several notebooks covering training, preprocessing, evaluation, and explainability:
+
+- `covid_cough_clean_raw_csv_notebook.ipynb`
+- `risk-cancer-ml-classification_modified.ipynb`
+- `lung_deep_end2end_multi_backbones_gradcam.ipynb`
+- `lung_feature_extraction_ml_multi_backbones.ipynb`
+- `lunge-diseases-mobilenet.ipynb`
+- `Respiratory_Sound_Classification_Pipeline_reviewed.ipynb`
+- `hard Notebook.ipynb`
+
+---
+
+## Datasets
 
 This project uses multiple public datasets for different healthcare-related tasks:
 
-Lung X-ray / Lung Disease Dataset
+### Lung X-ray / Lung Disease Dataset
+Used for chest X-ray image classification.  
+Source: [Kaggle - Lung Disease Dataset](https://www.kaggle.com/datasets/fatemehmehrparvar/lung-disease)
 
-Used for chest X-ray image classification.
-Source: Kaggle - Lung Disease Dataset
+### COVID Cough Dataset
+Used for cough-based classification and COVID-related audio analysis.  
+Source: [Kaggle - CoughClassifier Trial](https://www.kaggle.com/datasets/himanshu007121/coughclassifier-trial)
 
-COVID Cough Dataset
+### Respiratory Sound Dataset
+Used for lung sound and respiratory audio classification.  
+Source: [Kaggle - Respiratory Sound Database](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)
 
-Used for cough-based classification and COVID-related audio analysis.
-Source: Kaggle - CoughClassifier Trial
+### Cancer Risk Dataset
+Used for cancer risk prediction based on patient and environmental factors.  
+Source: [Kaggle - Cancer Patients and Air Pollution](https://www.kaggle.com/datasets/thedevastator/cancer-patients-and-air-pollution-a-new-link)
 
-Respiratory Sound Dataset
+---
 
-Used for lung sound and respiratory audio classification.
-Source: Kaggle - Respiratory Sound Database
-
-Cancer Risk Dataset
-
-Used for cancer risk prediction based on patient and environmental factors.
-Source: Kaggle - Cancer Patients and Air Pollution
-
-Technologies Used
+## Technologies Used
 
 This project was built using the following technologies and tools:
 
-Python
-Jupyter Notebook
-Machine Learning
-Deep Learning
-Computer Vision
-Audio Signal Processing
-FastAPI
-Hugging Face Spaces
-Arduino
-Workflow Summary
+- Python
+- Jupyter Notebook
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- Audio Signal Processing
+- FastAPI
+- Hugging Face Spaces
+- Arduino
+
+---
+
+## Workflow Summary
 
 The general workflow across the project modules includes:
 
-Data collection and loading
-Data preprocessing and cleaning
-Feature extraction or deep feature learning
-Model training and validation
-Performance evaluation
-Explainability or visualization where needed
-Deployment through API or demo applications
-Objectives
+1. Data collection and loading
+2. Data preprocessing and cleaning
+3. Feature extraction or deep feature learning
+4. Model training and validation
+5. Performance evaluation
+6. Explainability or visualization where needed
+7. Deployment through API or demo applications
+
+---
+
+## Objectives
 
 The main goals of this project are to:
 
-Support respiratory disease analysis using AI
-Classify chest X-ray images automatically
-Analyze cough and respiratory sounds
-Predict cancer-related risk using structured data
-Provide deployable AI services for inference
-Integrate software intelligence with embedded hardware solutions
-Possible Use Cases
+- Support respiratory disease analysis using AI
+- Classify chest X-ray images automatically
+- Analyze cough and respiratory sounds
+- Predict cancer-related risk using structured data
+- Provide deployable AI services for inference
+- Integrate software intelligence with embedded hardware solutions
+
+---
+
+## Possible Use Cases
 
 This project can be useful in scenarios such as:
 
-Preliminary respiratory disease screening
-AI-assisted healthcare research
-Educational medical AI projects
-Smart diagnostic support systems
-Intelligent monitoring applications
-Deployment
+- Preliminary respiratory disease screening
+- AI-assisted healthcare research
+- Educational medical AI projects
+- Smart diagnostic support systems
+- Intelligent monitoring applications
+
+---
+
+## Deployment
 
 Some project modules include deployment-ready folders for building APIs or interactive demos.
 
 Examples include:
 
-FastAPI-based inference services
-Hugging Face Spaces deployment
-Lightweight model-serving pipelines
+- FastAPI-based inference services
+- Hugging Face Spaces deployment
+- Lightweight model-serving pipelines
 
 Each deployment folder contains the files required for running the related module independently.
 
-Notes
-Each module is designed as a separate pipeline.
-Some parts are focused on experimentation through notebooks.
-Other parts are prepared for deployment and practical inference.
-This repository acts as a central place for all graduation project components.
-Future Improvements
+---
+
+## Notes
+
+- Each module is designed as a separate pipeline.
+- Some parts are focused on experimentation through notebooks.
+- Other parts are prepared for deployment and practical inference.
+- This repository acts as a central place for all graduation project components.
+
+---
+
+## Future Improvements
 
 Possible future enhancements include:
 
-Adding a unified frontend for all modules
-Improving deployment automation
-Adding more detailed documentation for each subproject
-Uploading trained model files separately
-Adding experiment tracking and reproducibility steps
-Expanding evaluation on larger datasets
-Integrating all modules into one complete healthcare platform
-Contributors
+- Adding a unified frontend for all modules
+- Improving deployment automation
+- Adding more detailed documentation for each subproject
+- Uploading trained model files separately
+- Adding experiment tracking and reproducibility steps
+- Expanding evaluation on larger datasets
+- Integrating all modules into one complete healthcare platform
+
+---
+
+## Contributors
 
 Graduation Project Team
+
+---
+
+## License
+
+This project is intended for **educational and research purposes**.
