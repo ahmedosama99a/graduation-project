@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lung MobileNet API</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 20px; }
+    button { padding: 10px 16px; border-radius: 8px; border: 0; cursor: pointer; }
+    pre { background: #f6f8fa; padding: 12px; border-radius: 8px; overflow: auto; }
+    .muted { color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Lung MobileNet API</h1>
+  <p class="muted">Upload a chest X-ray image to get a prediction.</p>
+
+  <div class="card">
+    <input id="fileInput" type="file" accept="image/*" />
+    <button onclick="submitImage()">Predict</button>
+    <p class="muted">API endpoint: <code>/predict</code></p>
+  </div>
+
+  <h2>Result</h2>
+  <pre id="result">No result yet.</pre>
+
+  <script>
+    async function submitImage() {
+      const input = document.getElementById('fileInput');
+      const result = document.getElementById('result');
+
+      if (!input.files.length) {
+        result.textContent = 'Please choose an image first.';
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append('file', input.files[0]);
+
+      result.textContent = 'Processing...';
+
+      try {
+        const response = await fetch('/predict', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+        result.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        result.textContent = 'Request failed: ' + error;
+      }
+    }
+  </script>
+</body>
+</html>

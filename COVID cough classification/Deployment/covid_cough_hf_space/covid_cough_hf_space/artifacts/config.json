@@ -1,0 +1,24 @@
+{
+  "project_dir": "./covid_cough_project",
+  "dataset_csv": "D:\\gradution project\\dataaa\\cough_trial_extended.csv",
+  "audio_base_dir": "D:\\gradution project\\dataaa\\trial_covid",
+  "artifacts_dir": "./covid_cough_project/artifacts",
+  "file_path_column": "file_properties",
+  "label_column": "class",
+  "sample_rate": 22050,
+  "duration_sec": 5.0,
+  "mono": true,
+  "test_size": 0.2,
+  "random_state": 42,
+  "mlp_hidden_layers": [
+    128,
+    64,
+    32
+  ],
+  "mlp_max_iter": 400,
+  "run_cross_validation": true,
+  "cv_folds": 5,
+  "default_positive_label": "covid",
+  "clinical_use_text": "physician_decision_support",
+  "disclaimer_text": "This result is for clinical decision support only and must not be used as a standalone diagnosis."
+}

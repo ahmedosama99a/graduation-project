@@ -1,0 +1,20 @@
+{
+  "img_size": [
+    256,
+    256
+  ],
+  "color_mode": "rgb",
+  "class_mode": "categorical",
+  "num_classes": 3,
+  "model_file": "mobilenet_lung_model.keras",
+  "class_names_file": "class_names.json",
+  "preprocessing": {
+    "resize": [
+      256,
+      256
+    ],
+    "convert_to_rgb": true,
+    "enhance_image": true,
+    "rescale": 0.00392156862745098
+  }
+}
